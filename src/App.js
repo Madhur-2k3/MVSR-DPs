@@ -19,7 +19,9 @@ function App() {
           rollNumbers.map((rollNo)=>(
             <div>
             <img className=' w-32 m-3 rounded-full '
-          src={`http://results.mvsrec.edu.in/sbcmsstudent/Frm_StudentPhoto.aspx?StudentCode=${rollNo}`}/>
+            src={`http://results.mvsrec.edu.in/sbcmsstudent/Frm_StudentPhoto.aspx?StudentCode=${rollNo}`} 
+            alt={rollNo}
+             loading='lazy'/>
           <h1 className=' text-center text-gray-300'>{rollNo}</h1>
           </div>
           ))
